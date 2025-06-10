@@ -1,0 +1,81 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">TodoZen</string>
+    <!-- General -->
+    <string name="refresh">Refresh</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="add_task">Add Task</string>
+    <string name="home">Home</string>
+    <string name="completed">Completed</string>
+    <string name="settings">Settings</string>
+
+    <!-- Home Fragment -->
+    <string name="ongoing_tasks">Ongoing Tasks</string>
+
+    <!-- Add Task Fragment -->
+    <string name="add_new_task">Add New Task</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="task_title">Task Title</string>
+    <string name="description_optional">Description (optional)</string>
+    <string name="category">Category</string>
+    <string name="work">Work</string>
+    <string name="personal">Personal</string>
+    <string name="shopping">Shopping</string>
+    <string name="other">Other</string>
+    <string name="priority">Priority</string>
+    <string name="high">High</string>
+    <string name="medium">Medium</string>
+    <string name="low">Low</string>
+    <string name="set_due_date">Set Due Date</string>
+    <string name="task_saved">Task saved</string>
+    <string name="task_updated">Task updated</string>
+    <string name="title_cannot_be_empty">Title cannot be empty</string>
+
+    <string name="unsaved_changes">Unsaved Changes</string>
+    <string name="unsaved_changes_message">You have unsaved changes. Are you sure you want to discard them?</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep Editing</string>
+
+    <string name="enter_custom_category">Enter custom category</string>
+    <string name="please_enter_category">Please enter a category</string>
+
+    <!-- Completed Tasks Fragment -->
+    <string name="completed_tasks">Completed Tasks</string>
+    <string name="no_completed_tasks_yet">No completed tasks yet. Keep going!</string>
+
+    <!-- Dialogs and Messages -->
+    <string name="task_completed">Task Completed!</string>
+    <string name="motivation_for_you">A little motivation for you:</string>
+    <string name="task_marked_as_incomplete">Task marked as incomplete</string>
+    <string name="task_deleted">Task deleted</string>
+    <string name="undo">Undo</string>
+
+
+    <!-- Settings -->
+    <string name="theme">Theme</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+    <string name="follow_system">Follow System</string>
+    <string name="choose_theme">Choose Theme</string>
+    <string name="about">About</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="about_message">TodoZen is your personal task management companion designed to help you stay organized and productive.\n\nFeatures:\n• Create and manage tasks with customizable priorities\n• Organize tasks by categories\n• Set due dates for important deadlines\n• Track completed tasks\n• Get inspired by motivational quotes\n• Enjoy a quick memory game for relaxation\n\nVersion 1.0.0\nDeveloped by Ilham Kurniawan\n\nThanks for using TodoZen!</string>
+    <string name="privacy_policy_message">Privacy Policy for TodoZen\n\nEffective Date: June 2025\n\nInformation Collection:\nTodoZen does not collect any personal information. All task data is stored locally on your device.\n\nPermissions:\n• Internet - Used solely to fetch motivational quotes\n• Network State - To check connectivity before fetching quotes\n\nData Storage:\nAll task data is stored locally on your device and is not shared with any third parties.\n\nThird-Party Services:\nThe app uses a free public API to fetch motivational quotes.\n\nChanges to Policy:\nAny changes to this policy will be updated with new app versions.\n\nContact:\nFor questions about this policy, please contact todozen@example.com.</string>
+
+    <!-- Memory Game strings -->
+    <string name="memory_game">Memory Game</string>
+    <string name="memory_game_description">Match all the pairs of cards with the fewest moves</string>
+    <string name="moves_count">Moves: %d</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="game_complete_message">You completed the game in %d moves!</string>
+    <string name="play_again">Play Again</string>
+    <string name="quit">Quit</string>
+    <string name="quit_game">Quit Game?</string>
+    <string name="quit_game_message">Are you sure you want to quit? Your progress will be lost.</string>
+    <string name="keep_playing">Keep Playing</string>
+    <string name="new_game">New Game</string>
+
+    <string name="play_game">Play Game</string>
+
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="md_theme_light_primary">#093476</color>
+    <color name="md_theme_light_onPrimary">#FFFFFF</color>
+    <color name="md_theme_light_primaryContainer">#CAE6FF</color>
+    <color name="background_light">#FFFFFF</color>
+    <!-- Add other light theme colors -->
+
+    <color name="md_theme_dark_primary">#8DCDFF</color>
+    <color name="md_theme_dark_onPrimary">#00344F</color>
+    <color name="md_theme_dark_primaryContainer">#0C4398</color>
+    <color name="background_dark">#0E101D</color>
+    <!-- Add other dark theme colors -->
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primary">#00A614</color>
+    <color name="primary_dark">#6246C2</color>
+    <color name="accent">#2CB67D</color>
+</resources>
