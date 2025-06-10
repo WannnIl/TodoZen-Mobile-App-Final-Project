@@ -1,0 +1,53 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">TodoZen</string>
+    <!-- General -->
+    <string name="refresh">Refresh</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="add_task">Add Task</string>
+    <string name="home">Home</string>
+    <string name="completed">Completed</string>
+    <string name="settings">Settings</string>
+
+    <!-- Home Fragment -->
+    <string name="ongoing_tasks">Ongoing Tasks</string>
+
+    <!-- Add Task Fragment -->
+    <string name="add_new_task">Add New Task</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="task_title">Task Title</string>
+    <string name="description_optional">Description (optional)</string>
+    <string name="category">Category</string>
+    <string name="work">Work</string>
+    <string name="personal">Personal</string>
+    <string name="shopping">Shopping</string>
+    <string name="other">Other</string>
+    <string name="priority">Priority</string>
+    <string name="high">High</string>
+    <string name="medium">Medium</string>
+    <string name="low">Low</string>
+    <string name="set_due_date">Set Due Date</string>
+    <string name="task_saved">Task saved</string>
+    <string name="task_updated">Task updated</string>
+    <string name="title_cannot_be_empty">Title cannot be empty</string>
+
+    <!-- Completed Tasks Fragment -->
+    <string name="completed_tasks">Completed Tasks</string>
+    <string name="no_completed_tasks_yet">No completed tasks yet. Keep going!</string>
+
+    <!-- Dialogs and Messages -->
+    <string name="task_completed">Task Completed!</string>
+    <string name="motivation_for_you">A little motivation for you:</string>
+    <string name="task_marked_as_incomplete">Task marked as incomplete</string>
+    <string name="task_deleted">Task deleted</string>
+    <string name="undo">Undo</string>
+
+    <!-- Settings -->
+    <string name="theme">Theme</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+    <string name="follow_system">Follow System</string>
+    <string name="choose_theme">Choose Theme</string>
+
+</resources>

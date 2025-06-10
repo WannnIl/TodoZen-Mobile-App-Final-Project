@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="background">@color/background_light</color>
+    <color name="on_surface_text">#000000</color>
+    <color name="card_background">#EBEBEB</color>
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FinalProjectC" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/md_theme_light_primary</item>
+        <item name="colorOnPrimary">@color/md_theme_light_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/md_theme_light_primaryContainer</item>
+
+        <!-- Bottom navigation customization -->
+        <item name="bottomNavigationStyle">@style/Widget.App.BottomNavigationView</item>
+    </style>
+
+    <style name="Widget.App.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.BottomNavigationView</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="elevation">8dp</item>
+    </style>
+
+    <style name="ThemeOverlay.App.BottomNavigationView" parent="">
+        <item name="colorSurface">@android:color/transparent</item>
+        <item name="colorOnSurfaceVariant">@color/bottom_nav_colors</item>
+        <item name="colorPrimary">@color/bottom_nav_colors</item>
+    </style>
+
+    <style name="Theme.FinalProjectC" parent="Base.Theme.FinalProjectC" />
+</resources>

@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="background">#141725</color>
+    <color name="on_surface_text">#FFFFFF</color>
+    <color name="card_background">#1D1F32</color>
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FinalProjectC" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorOnPrimary">@color/md_theme_dark_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/md_theme_dark_primaryContainer</item>
+
+        <!-- Bottom navigation customization -->
+        <item name="bottomNavigationStyle">@style/Widget.App.BottomNavigationView</item>
+    </style>
+
+    <style name="Widget.App.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.BottomNavigationView.Dark</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="elevation">8dp</item>
+    </style>
+
+    <style name="ThemeOverlay.App.BottomNavigationView.Dark" parent="">
+        <item name="colorSurface">@android:color/transparent</item>
+
+    </style>
+</resources>
