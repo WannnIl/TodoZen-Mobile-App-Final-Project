@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view_task"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="12dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginBottom="6dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="3dp"
+    app:strokeWidth="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@color/card_background"
+        android:paddingEnd="12dp">
+
+        <View
+            android:id="@+id/priority_indicator"
+            android:layout_width="9dp"
+            android:layout_height="0dp"
+            android:background="@drawable/priority_indicator_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/checkbox_completed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:buttonTint="#2196F3"
+            app:layout_constraintStart_toEndOf="@id/priority_indicator"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Added TextView for description -->
+        <TextView
+            android:id="@+id/text_view_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/on_surface_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/checkbox_completed"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Buy groceries for dinner party" />
+
+        <TextView
+            android:id="@+id/text_view_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+            android:textSize="12sp"
+            android:textColor="@color/on_surface_text"
+            app:layout_constraintEnd_toEndOf="@+id/text_view_title"
+            app:layout_constraintStart_toStartOf="@+id/text_view_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_title"
+            tools:text="Don't forget milk, eggs, and bread for the weekend dinner party" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/text_view_category"
+            style="@style/Widget.Material3.Chip.Assist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textAppearance="@style/TextAppearance.Material3.LabelSmall"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            app:chipBackgroundColor="@color/accent"
+            app:chipMinHeight="24dp"
+            app:chipMinTouchTargetSize="24dp"
+            app:layout_constraintStart_toStartOf="@+id/text_view_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_description"
+            tools:text="Shopping" />
+
+        <TextView
+            android:id="@+id/text_view_due_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/due_date_background"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingTop="3dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="3dp"
+            android:textAppearance="@style/TextAppearance.Material3.LabelSmall"
+            android:textColor="#5A91F0"
+            android:textSize="12sp"
+            app:drawableStartCompat="@drawable/ic_calendar_small"
+            app:drawableTint="#5A91F0"
+            app:layout_constraintStart_toStartOf="@+id/text_view_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_category"
+            tools:text="Dec 25, 2024" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

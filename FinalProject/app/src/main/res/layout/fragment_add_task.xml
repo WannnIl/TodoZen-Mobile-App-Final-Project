@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.AddTaskFragment">
+
+    <!-- Tombol simpan yang lama sudah dihapus dari sini -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_add_task"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="@drawable/ic_close"
+        app:title="@string/add_new_task" />
+
+    <!-- Sisanya tetap sama -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_input_layout_title"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/task_title">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_text_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapSentences" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="@string/description_optional">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_text_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:minLines="3" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/category"
+                android:textAppearance="?attr/textAppearanceLabelLarge"/>
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip_group_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:singleSelection="true">
+                <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Choice" android:id="@+id/chip_work" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/work"/>
+                <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Choice" android:id="@+id/chip_personal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personal"/>
+                <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Choice" android:id="@+id/chip_shopping" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shopping"/>
+                <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Choice" android:id="@+id/chip_other" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/other"/>
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/priority"
+                android:textAppearance="?attr/textAppearanceLabelLarge"/>
+
+            <RadioGroup
+                android:id="@+id/radio_group_priority"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton android:id="@+id/radio_high" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/high" android:layout_weight="1"/>
+                <RadioButton android:id="@+id/radio_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/medium" android:layout_weight="1"/>
+                <RadioButton android:id="@+id/radio_low" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/low" android:layout_weight="1" android:checked="true"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button_due_date"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/set_due_date"
+                app:icon="@drawable/ic_calendar" />
+
+            <TextView
+                android:id="@+id/text_view_selected_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                tools:text="Selected: 25 Dec 2024"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
